@@ -21,3 +21,5 @@ Both pipelines use the same prompt and the same LLM (`gemini-2.5-flash`, tempera
 3. Open `rag_rerank.ipynb` and run all cells
 
 Ran on CPU. The Gemini free tier allows 5 requests/minute and 20/day; one full run uses about 11.
+
+**Report:** [report.pdf](report.pdf). If GitHub's preview doesn't load, use the download button.
