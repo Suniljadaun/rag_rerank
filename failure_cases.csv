@@ -1,0 +1,62 @@
+category,question,gold_id,baseline_top3,reranked_top3,answer1,answer2,llm1_ms,llm2_ms
+Keyword trap / recital distractor,How quickly must a company report a hack?,266,"[95, 94, 96]","[94, 267, 266]","A company (controller) must report a personal data breach to the supervisory authority without undue delay and, where feasible, not later than 72 hours after becoming aware of it [chunk 94].
+
+**Exceptions and Conditions:**
+*   **No notification to supervisory authority:** Notification is not required if the controller can demonstrate that the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons [chunk 94].
+*   **Delay in notification to supervisory authority:** If notification cannot be achieved within 72 hours, the reasons for the delay should accompany the notification, and information may be provided in phases without undue further delay [chunk 94].
+*   **Communication to data subjects:** The controller should communicate a personal data breach to the data subject without undue delay, where that breach is likely to result in a high risk to the rights and freedoms of the natural person [chunk 94]. Such communications should be made as soon as reasonably feasible [chunk 95].
+*   **Factors for ""undue delay"":** The nature and gravity of the personal data breach and its consequences and adverse effects for the data subject should be taken into account when establishing if notification was made without undue delay [chunk 95, chunk 96].
+*   **Justification for more time (data subjects):** The need to implement appropriate measures against continuing or similar personal data breaches may justify more time for communication to data subjects [chunk 95].
+*   **Law enforcement interests:** Rules and procedures for notification should take into account the legitimate interests of law-enforcement authorities where early disclosure could unnecessarily hamper the investigation of the circumstances of a personal data breach [chunk 96].","A company, acting as a controller, must notify the personal data breach to the supervisory authority without undue delay and, where feasible, not later than 72 hours after becoming aware of it [chunk 94, chunk 266].
+
+**Exceptions and Conditions:**
+*   This notification is not required if the controller is able to demonstrate that the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons [chunk 94, chunk 266].
+*   If the notification to the supervisory authority cannot be achieved within 72 hours, the reasons for the delay should accompany the notification [chunk 94, chunk 266, chunk 267]. Information may be provided in phases without undue further delay [chunk 94, chunk 267].
+
+A company acting as a processor shall notify the controller without undue delay after becoming aware of a personal data breach [chunk 266, chunk 267].
+
+Additionally, the controller should communicate a personal data breach to the data subject without undue delay where that personal data breach is likely to result in a high risk to the rights and freedoms of the natural person [chunk 94].",6404.936800001451,5543.715799998608
+Negation,When can a company refuse to delete my data?,69,"[233, 234, 68]","[69, 233, 38]","A company can refuse to delete your data if:
+* The data subject withdraws consent on which the processing is based, but there is another legal ground for the processing [chunk 234].
+* The data subject objects to the processing pursuant to Article 21(1), but there are overriding legitimate grounds for the processing [chunk 234].","A company (controller) can lawfully retain personal data, and thus refuse to delete it, where it is necessary for:
+*   Exercising the right of freedom of expression and information [chunk 69].
+*   Compliance with a legal obligation [chunk 69].
+*   The performance of a task carried out in the public interest or in the exercise of official authority vested in the controller [chunk 69].
+*   Grounds of public interest in the area of public health [chunk 69].
+*   Archiving purposes in the public interest, scientific or historical research purposes or statistical purposes [chunk 69].
+*   The establishment, exercise or defence of legal claims [chunk 69].",3928.0923000005714,3948.3910000017204
+Counter-example (re-ranking hurt),When is a company not allowed to decide about me using only an algorithm?,243,"[76, 243, 78]","[76, 317, 79]","A company is generally not allowed to decide about you using only an algorithm if the decision is based solely on automated processing, including profiling, and produces legal effects concerning you or similarly significantly affects you [chunk 76, chunk 243].
+
+However, this right not to be subject to such a decision does not apply if the decision:
+* Is necessary for entering into, or performance of, a contract between the data subject and a data controller [chunk 243].
+* Is authorised by Union or Member State law to which the controller is subject and which also lays down suitable measures to safeguard the data subject's rights and freedoms and legitimate interests (e.g., for fraud and tax-evasion monitoring and prevention purposes) [chunk 76, chunk 243].
+* Is based on the data subject's explicit consent [chunk 243].
+
+**Exceptions/Conditions:**
+* The measure should not concern a child [chunk 78].
+* Automated decision-making and profiling based on special categories of personal data should be allowed only under specific conditions [chunk 78].
+* In cases where the decision is necessary for a contract or based on explicit consent, the data controller must implement suitable measures to safeguard the data subject's rights and freedoms and legitimate interests, including at least the right to obtain human intervention, to express their point of view, and to contest the decision [chunk 243].","A company is generally not allowed to decide about you using only an algorithm if that decision is based solely on automated processing and produces legal effects concerning you or similarly significantly affects you [chunk 76].
+
+Examples of such decisions include:
+*   Automatic refusal of an online credit application [chunk 76].
+*   E-recruiting practices without any human intervention [chunk 76].
+
+**Exception:**
+Decision-making based solely on automated processing, including profiling, is allowed where expressly authorised by Union or Member State law to which the controller is subject. This includes purposes such as fraud and tax-evasion monitoring and prevention, conducted in accordance with Union regulations, standards, and recommendations [chunk 76].
+
+Data subjects have the right not to be subject to decisions based solely on automated processing, including profiling [chunk 317].",7602.577399997244,4870.239500000025
+Recall limit (gold not in top 10),Can a company process someone's health data?,208,"[66, 44, 169]","[44, 66, 101]","Yes, a company can process someone's health data under certain conditions.
+
+Processing of personal data, which includes health data, is regarded as lawful where it is:
+*   In the public interest to do so, including for health purposes such as public health and social protection and the management of health care services [chunk 44].
+*   Necessary to protect an interest which is essential for the life of the data subject or that of another natural person [chunk 44].
+*   For archiving purposes in the public interest, scientific or historical research purposes or statistical purposes. This processing must comply with specific conditions and safeguards, and may entail specific procedures for data subjects to exercise their rights, along with technical and organisational measures to minimise processing. For scientific purposes, it should also comply with other relevant legislation such as on clinical trials [chunk 169].
+
+Data subjects also have the right to access their health data, such as medical records, diagnoses, examination results, and assessments by treating physicians [chunk 66].","Yes, the passages indicate that health data can be processed.
+
+Processing of personal data, including health data, is regarded as lawful where it is in the public interest to do so, including for health purposes such as public health and social protection and the management of health care services [chunk 44]. It is also lawful where it is necessary to protect an interest which is essential for the life of the data subject or that of another natural person [chunk 44].
+
+The passages mention processing by a professional association [chunk 44], by an individual physician, other health care professional, or lawyer [chunk 101], and by ""several controllers"" who plan to introduce a common application or processing environment across an industry sector or segment [chunk 101], which could include companies.
+
+**Exception/Condition:**
+A data protection impact assessment should not be mandatory if the processing concerns personal data from patients or clients by an individual physician, other health care professional, or lawyer, and is not considered to be on a large scale [chunk 101].",4063.969200000429,7998.43250000049
